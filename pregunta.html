@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #9fa2c8;
+            color: #fff;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .question-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .buttons-container {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-container">
+        <h1>¿Quieres ser mi San Valentín?</h1>
+        <div class="buttons-container">
+            <button onclick="window.location.href='si.html'">Sí</button>
+            <button onclick="window.location.href='no.html'">No</button>
+        </div>
+    </div>
+</body>
+</html>

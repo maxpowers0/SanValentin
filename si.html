@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Sí!</title>
+    <style>
+        body {
+            background-color: #9fa2c8;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Eliminamos overflow: hidden; para permitir el scroll */
+            overflow-y: auto; /* Permitir scroll vertical si el contenido excede la altura */
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("corazon.png");
+            background-size: 50px 50px;
+            opacity: 0.3;
+            z-index: -1;
+            animation: float 15s linear infinite, pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(20px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 0.3; }
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            text-align: left;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1.5em;
+            display: inline; /*Para alinear con el botón*/
+            margin-right: 10px; /*Espacio entre el texto y el botón*/
+
+        }
+
+        /* Estilos para el botón */
+        .hyperlink-button {
+            background-color: #9fa2c8; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition-duration: 0.4s; /* Animación suave al pasar el ratón */
+        }
+
+        .hyperlink-button:hover {
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>¡Siiii!</h1>
+    <p>Gracias rata mas linda del viejo oeste te quiero mucho (pon la musica de fondo)</p>
+    <a href="https://music.youtube.com/watch?v=M268Csnue9I&si=qmpvrddioXbR7bk3" class="hyperlink-button">Musica de Fondo</a> <!-- Reemplaza con tu enlace -->
+
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="imagen1.jpg" alt="Imagen 1">
+            <p>Cuando nos conocimos y empezamos esta historia tan peculiar nuestra, quién diría a dónde llegaríamos. </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="imagen2.jpg" alt="Imagen 2">
+            <p>Ya éramos pareja y todo; quién diría que volverías después de los exámenes. Pensé que era una excusa. Perdon</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="imagen3.jpg" alt="Imagen 3">
+            <p>Ya graduada e independiente, estoy totalmente orgulloso. Sabía que lo ibas a lograr y que vas a demostrar a todos lo que eres y cuánto vales.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="imagen4.jpg" alt="Imagen 4">
+            <p>Esa hermosa sonrisa tuya, la expresividad, la personalidad, la espontaneidad... Todo en ti es hermoso y me encanta.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="imagen5.jpg" alt="Imagen 5">
+            <p>Tú, toda fachera y chill. Esta sí que es por que sí te quiero, UwU.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="imagen6.jpg" alt="Imagen 6">
+            <p>Y esta es la última. Ya te lo dije, no es la de mejor calidad, pero tiene ese algo especial para mí de aquella época y los momentos que vivimos. Es mi pequeño tesoro entre nuestros recuerdos. Te amo :3.</p>
+        </div>
+    </div>
+</body>
+</html>

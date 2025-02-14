@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Un fondo ligero */
+}
+
+.container {
+    width: fit-content; /* Ajustar al contenido */
+    height: fit-content;
+}
+
+#valentines-image {
+    width: auto; /* Ajustar al ancho del contenedor */
+    height: auto; /* Mantener la proporción */
+    max-width: 500px; /* Ancho máximo para la imagen */
+    max-height: 800px; /* Alto máximo para la imagen */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
